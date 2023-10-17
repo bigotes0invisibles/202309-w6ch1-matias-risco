@@ -5,6 +5,7 @@ class List extends Component {
     super(parentElement, "ul", className);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   protected populate(): void {}
 }
 

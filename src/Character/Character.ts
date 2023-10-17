@@ -13,9 +13,11 @@ abstract class Character {
     this.show = "Juego de tronos";
   }
 
-  die() {
+  public die() {
     this.alive = false;
   }
+
+  public abstract communicate(): string;
 }
 
 export default Character;

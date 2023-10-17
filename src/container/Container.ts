@@ -11,6 +11,7 @@ class Container extends Component {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   protected populate(): void {}
 }
 

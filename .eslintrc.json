@@ -3,11 +3,14 @@
     "es2021": true,
     "node": true
   },
-  "extends": "xo",
+  "extends": ["xo", "prettier"],
   "overrides": [
     {
       "extends": ["xo-typescript"],
-      "files": ["*.ts", "*.tsx"]
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-unused-vars": "error"
+      }
     }
   ],
   "parserOptions": {

@@ -1,3 +1,4 @@
+import { type CharacterData } from "../Type";
 abstract class Character {
   name;
   family;
@@ -5,10 +6,10 @@ abstract class Character {
   alive: boolean;
   show: string;
 
-  constructor(name: string, family: string, age: number) {
-    this.name = name;
-    this.family = family;
-    this.age = age;
+  constructor(data: CharacterData) {
+    this.name = data.name;
+    this.family = data.family;
+    this.age = data.age;
     this.alive = true;
     this.show = "Juego de tronos";
   }

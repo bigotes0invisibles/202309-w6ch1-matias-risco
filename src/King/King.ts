@@ -1,11 +1,11 @@
 import Character from "../Character/Character.js";
-
+import { type KingData } from "../Type.js";
 class King extends Character {
   yearsOfReign;
 
-  constructor(name: string, family: string, age: number, yearsOfReign: number) {
-    super(name, family, age);
-    this.yearsOfReign = yearsOfReign;
+  constructor(data: KingData) {
+    super(data);
+    this.yearsOfReign = data.yearsOfReign;
   }
 
   communicate() {

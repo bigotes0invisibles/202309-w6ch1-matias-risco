@@ -1,17 +1,19 @@
 import Component from "../Component.js";
-import type List from "../list/List.js";
 class Container extends Component {
-  list;
-
-  constructor(parentElement: HTMLElement, className: string, list?: List) {
-    super(parentElement, "div", className);
-    if (list !== undefined) {
-      this.list = list;
-    }
+  constructor(
+    parentElement: HTMLElement,
+    tagElement: string,
+    className: string,
+    private readonly childComponents: Component[],
+  ) {
+    super(parentElement, tagElement, className);
   }
 
   protected populate(): void {
-    this.list?.reder();
+    this.childComponents.forEach((component: Component) => {
+      component.setParentElement(this.element);
+      component.reder();
+    });
   }
 }
 

@@ -1,4 +1,4 @@
-import { type CharacterData } from "../Type";
+import { type CharacterData } from "../../Type";
 abstract class Character {
   name;
   family;

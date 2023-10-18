@@ -1,4 +1,4 @@
-import Component from "../components/Component.js";
+import Component from "../Component.js";
 import type List from "../list/List.js";
 class Container extends Component {
   list;

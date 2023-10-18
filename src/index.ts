@@ -1,4 +1,4 @@
-import Container from "./container/Container.js";
+import Container from "./components/container/Container.js";
 
 const body = document.querySelector("body")!;
 

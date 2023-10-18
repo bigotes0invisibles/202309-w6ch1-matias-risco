@@ -1,5 +1,5 @@
-import type Character from "../Character/Character";
-import Component from "../components/Component";
+import type Character from "../../classes/Character/Character";
+import Component from "../Component";
 
 class Item extends Component {
   data;

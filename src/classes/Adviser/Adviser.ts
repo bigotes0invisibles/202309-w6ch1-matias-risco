@@ -1,5 +1,5 @@
 import Character from "../Character/Character";
-import { type AdviserData } from "../Type";
+import { type AdviserData } from "../../Type";
 
 class Adviser extends Character {
   adviseCharacter;

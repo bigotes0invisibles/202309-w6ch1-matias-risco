@@ -1,5 +1,5 @@
 import type Character from "../../classes/Character/Character";
-import Component from "../Component";
+import Component from "../Component.js";
 
 class Card extends Component {
   constructor(

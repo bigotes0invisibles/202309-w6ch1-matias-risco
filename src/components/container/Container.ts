@@ -1,7 +1,7 @@
 import Component from "../Component.js";
 class Container extends Component {
   constructor(
-    parentElement: HTMLElement,
+    parentElement: HTMLElement | undefined,
     tagElement: string,
     className: string,
     private readonly childComponents: Component[],

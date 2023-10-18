@@ -1,6 +1,6 @@
 import type Character from "../../classes/Character/Character";
-import Card from "../Card/Card";
-import Component from "../Component";
+import Card from "../Card/Card.js";
+import Component from "../Component.js";
 
 class Item extends Component {
   constructor(
@@ -8,7 +8,7 @@ class Item extends Component {
     className: string,
     private readonly data: Character,
   ) {
-    super(parentElement, "ul", className);
+    super(parentElement, "li", className);
   }
 
   protected populate(): void {

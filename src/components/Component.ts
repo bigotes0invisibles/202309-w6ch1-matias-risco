@@ -1,13 +1,11 @@
 abstract class Component {
   protected element: HTMLElement;
-  private parentElement;
 
   constructor(
-    parentElement: HTMLElement,
+    private parentElement: HTMLElement | undefined,
     tagElement: string,
     className: string,
   ) {
-    this.parentElement = parentElement;
     this.element = document.createElement(tagElement);
     this.element.className = className;
   }
@@ -17,6 +15,10 @@ abstract class Component {
   }
 
   reder() {
+    if (this.parentElement === undefined) {
+      throw Error("there is no parent Element");
+    }
+
     this.parentElement.appendChild(this.element);
     this.populate();
   }

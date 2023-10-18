@@ -1,4 +1,4 @@
-import Component from "../Component";
+import Component from "../Component.js";
 
 class App extends Component {
   constructor(
@@ -10,6 +10,7 @@ class App extends Component {
 
   protected populate(): void {
     this.childcomponent.setParentElement(this.element);
+    this.childcomponent.reder();
   }
 }
 

@@ -1,5 +1,5 @@
-import Character from "../classes/Character/Character.js";
-import { type SquireData } from "../Type.js";
+import Character from "../Character/Character.js";
+import { type SquireData } from "../../Type.js";
 
 class Squire extends Character {
   fighterServed;

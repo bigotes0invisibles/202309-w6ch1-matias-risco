@@ -1,12 +1,24 @@
+import type Character from "../Character/Character.js";
+import Item from "../Item/Item.js";
 import Component from "../components/Component.js";
 
 class List extends Component {
-  constructor(parentElement: HTMLElement, className: string) {
+  data;
+  constructor(
+    parentElement: HTMLElement,
+    className: string,
+    data: Character[],
+  ) {
     super(parentElement, "ul", className);
+    this.data = data;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  protected populate(): void {}
+  protected populate(): void {
+    this.data.forEach((character) => {
+      const item = new Item(this.element, "col", character);
+      item.reder();
+    });
+  }
 }
 
 export default List;

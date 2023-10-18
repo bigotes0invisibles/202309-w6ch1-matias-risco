@@ -1,6 +1,5 @@
 import Component from "../components/Component.js";
 import type List from "../list/List.js";
-
 class Container extends Component {
   list;
 
@@ -11,8 +10,9 @@ class Container extends Component {
     }
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  protected populate(): void {}
+  protected populate(): void {
+    this.list?.reder();
+  }
 }
 
 export default Container;

@@ -5,6 +5,7 @@ abstract class Character {
   age;
   alive: boolean;
   show: string;
+  img;
 
   constructor(data: CharacterData) {
     this.name = data.name;
@@ -12,6 +13,7 @@ abstract class Character {
     this.age = data.age;
     this.alive = true;
     this.show = "Juego de tronos";
+    this.img = data.img;
   }
 
   public die() {

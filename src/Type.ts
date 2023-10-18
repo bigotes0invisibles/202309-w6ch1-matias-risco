@@ -5,6 +5,7 @@ export interface CharacterData {
   name: string;
   family: string;
   age: number;
+  img: string;
 }
 
 export interface KingData extends CharacterData {

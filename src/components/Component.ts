@@ -1,6 +1,6 @@
 abstract class Component {
   protected element: HTMLElement;
-  private readonly parentElement;
+  private parentElement;
 
   constructor(
     parentElement: HTMLElement,
@@ -10,6 +10,10 @@ abstract class Component {
     this.parentElement = parentElement;
     this.element = document.createElement(tagElement);
     this.element.className = className;
+  }
+
+  setParentElement(parentElement: HTMLElement) {
+    this.parentElement = parentElement;
   }
 
   reder() {

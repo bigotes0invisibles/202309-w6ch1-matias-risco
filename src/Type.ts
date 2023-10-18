@@ -6,6 +6,7 @@ export interface CharacterData {
   family: string;
   age: number;
   img: string;
+  class: "Fighter" | "King" | "Adviser" | "Squire";
 }
 
 export interface KingData extends CharacterData {

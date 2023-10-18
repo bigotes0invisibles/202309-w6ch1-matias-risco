@@ -3,11 +3,10 @@ import Component from "../Component.js";
 import Item from "../Item/Item.js";
 
 class List extends Component {
-  data;
   constructor(
-    parentElement: HTMLElement,
+    parentElement: HTMLElement | undefined,
     className: string,
-    data: Character[],
+    private readonly data: Character[],
   ) {
     super(parentElement, "ul", className);
     this.data = data;

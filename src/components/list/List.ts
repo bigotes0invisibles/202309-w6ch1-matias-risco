@@ -1,6 +1,6 @@
 import type Character from "../../classes/Character/Character.js";
-import Item from "../Item/Item.js";
 import Component from "../Component.js";
+import Item from "../Item/Item.js";
 
 class List extends Component {
   data;

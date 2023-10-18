@@ -1,1 +1,0 @@
-describe("Given the class ", () => {});
